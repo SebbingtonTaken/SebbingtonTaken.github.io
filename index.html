@@ -3,9 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sebastian Chinchilla</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link href="./css/index.css" rel="stylesheet">
+    <link href="./css/slide.css" rel="stylesheet">
+    <script src="./js/displayProyectos.js"></script>
+
 </head>
 <body>
-    <h1> Portafolio </h1>
+    <nav>
+        <div class="navPrincipal">
+            <a href="#seccionIntroduccion">
+                <img id="logoPrincipal" src="./img/Logo.png">
+            </a>
+            
+            <a href="#seccionProyectos"> Proyectos</a>
+            <a href="#seccionProyectos"> CV </a>
+            <a href="#seccionProyectos"> Contacto </a>
+        </div>
+
+    </nav>
+
+    <section id="seccionIntroduccion">
+        <img id="imgIntroduccion" src="img/Logo_white.png">
+        <div class="textBox">
+            <p>
+                ¡Hola! Soy un Programador backend de aplicaciones web,
+                con experiencia en ASP.NET, Node.js, Python, Java y bases de datos relacionales
+                y no relacionales. ¡Me impulsan la creatividad y hacer un buen trabajo!
+            </p>
+        </div>
+    </section>
+
+    <section id="seccionProyectos">
+        <h1 class="titleProyectos"> Proyectos</h1>
+        <div class="slide-container">
+
+            <span class="slider-span" id="slider-span1"></span>
+            <span class="slider-span" id="slider-span2"></span>
+            <span class="slider-span" id="slider-span3"></span>
+            <span class="slider-span" id="slider-span4"></span>
+        
+            <div class="image-slider">
+        
+                <div class="slides-div" id="slide-1">
+                    <img src="./img/Proyecto2.png" alt="" class="slideImg" id="img1">
+                    <a href="#slider-span1" class="button" id="button-1" onclick="showText(1, event)"></a>
+                </div>
+        
+                <div class="slides-div" id="slide-2">
+                    <img src="./img/PokedexRandomizer.png" alt="" class="slideImg" id="img2">
+                    <a href="#slider-span2" class="button" id="button-2" onclick="showText(2, event)"></a>
+                </div>
+        
+                <div class="slides-div" id="slide-3">
+                    <img src="./img/ProyectoNomina.png" alt="" class="slideImg" id="img3">
+                    <a href="#slider-span3" class="button" id="button-3" onclick="showText(3, event)"></a>
+                </div>
+        
+                <div class="slides-div" id="slide-4">
+                    <img src="./img/Cenfomon.png" alt="" class="slideImg" id="img4">
+                 
+                    <a href="#slider-span4" class="button" id="button-4" onclick="showText(4, event)"></a>
+                </div>
+        
+            </div>
+
+       
+
+            
+        </div>
+
+        <div class="text-display" id="text-display"></div>
+        <div id="link-button-container"></div>
+    </section>
+
+
+
 </body>
 </html>

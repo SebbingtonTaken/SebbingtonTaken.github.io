@@ -1,0 +1,161 @@
+/* Base styles */
+.slide-container {
+    width: 100%;
+    height: 85vh;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    overflow-y: hidden; /* Disable vertical scrolling */
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+}
+
+.image-slider {
+    width: 100%;
+    height: 600px;
+    position: absolute;
+    left: 20%; /* Default position for the first image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+
+/* Individual slide divs */
+.slides-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 30px;
+}
+
+/* Styling for images */
+.slideImg {
+    position: relative;
+    height: 240px;
+    width: 370px;
+    transition: 0.5s;
+}
+
+/* Button styling */
+.button {
+    position: absolute;
+    height: 240px;
+    width: 370px;
+    transition: 0.5s;
+    background-color: rgba(67, 67, 151, 0.2);
+}
+
+/* Default state for the first image */
+#slider-span1:target ~ .image-slider #img1,
+#slider-span1:target ~ .image-slider #button-1 {
+    height: 380px;
+    width: 585px;
+    background-color: transparent;
+}
+
+/* Default positioning for the image slider when no target is selected */
+.image-slider:not(:target) {
+    left: 0%;
+}
+
+/* When slider-span1 is targeted, it will show image 1 */
+#slider-span1:target ~ .image-slider {
+    left: 20%;
+}
+
+/* When slider-span2 is targeted, it will show image 2 */
+#slider-span2:target ~ .image-slider {
+    left: 0%;
+}
+
+/* When slider-span3 is targeted, it will show image 3 */
+#slider-span3:target ~ .image-slider {
+    left: -20%;
+}
+
+/* When slider-span4 is targeted, it will show image 4 */
+#slider-span4:target ~ .image-slider {
+    left: -40%;
+}
+
+/* Styling for image 2 when it is targeted */
+#slider-span2:target ~ .image-slider #img2,
+#slider-span2:target ~ .image-slider #button-2 {
+    height: 380px;
+    width: 585px;
+    background-color: transparent;
+}
+
+/* Styling for image 3 when it is targeted */
+#slider-span3:target ~ .image-slider #img3,
+#slider-span3:target ~ .image-slider #button-3 {
+    height: 380px;
+    width: 585px;
+    background-color: transparent;
+}
+
+/* Styling for image 4 when it is targeted */
+#slider-span4:target ~ .image-slider #img4,
+#slider-span4:target ~ .image-slider #button-4 {
+    height: 380px;
+    width: 585px;
+    background-color: transparent;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1200px) {
+    .slideImg, .button {
+        height: 200px;
+        width: 300px;
+    }
+
+    #slider-span1:target ~ .image-slider #img1,
+    #slider-span1:target ~ .image-slider #button-1,
+    #slider-span2:target ~ .image-slider #img2,
+    #slider-span2:target ~ .image-slider #button-2,
+    #slider-span3:target ~ .image-slider #img3,
+    #slider-span3:target ~ .image-slider #button-3,
+    #slider-span4:target ~ .image-slider #img4,
+    #slider-span4:target ~ .image-slider #button-4 {
+        height: 300px;
+        width: 450px;
+    }
+}
+
+@media (max-width: 768px) {
+    .slideImg, .button {
+        height: 150px;
+        width: 250px;
+    }
+
+    #slider-span1:target ~ .image-slider #img1,
+    #slider-span1:target ~ .image-slider #button-1,
+    #slider-span2:target ~ .image-slider #img2,
+    #slider-span2:target ~ .image-slider #button-2,
+    #slider-span3:target ~ .image-slider #img3,
+    #slider-span3:target ~ .image-slider #button-3,
+    #slider-span4:target ~ .image-slider #img4,
+    #slider-span4:target ~ .image-slider #button-4 {
+        height: 250px;
+        width: 375px;
+    }
+}
+
+@media (max-width: 480px) {
+    .slideImg, .button {
+        height: 100px;
+        width: 150px;
+    }
+
+    #slider-span1:target ~ .image-slider #img1,
+    #slider-span1:target ~ .image-slider #button-1,
+    #slider-span2:target ~ .image-slider #img2,
+    #slider-span2:target ~ .image-slider #button-2,
+    #slider-span3:target ~ .image-slider #img3,
+    #slider-span3:target ~ .image-slider #button-3,
+    #slider-span4:target ~ .image-slider #img4,
+    #slider-span4:target ~ .image-slider #button-4 {
+        height: 200px;
+        width: 300px;
+    }
+}

@@ -1,0 +1,220 @@
+html{
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    scroll-behavior: smooth;
+}
+
+section{
+
+    display: flex;
+}
+
+.text-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    visibility: hidden;
+    transition: visibility 0s, opacity 0.5s linear;
+    opacity: 0;
+    margin-top: 20px; /* Adjust as needed */
+}
+
+.textBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%; /* Adjust width as needed */
+    max-width: 600px;
+    height: 150px; /* Fixed height */
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    overflow-y: auto; /* Allow vertical scrolling */
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.textBox > p {
+    margin: 0;
+}
+#seccionIntroduccion{
+    height: 700px;
+    background-color: #0D92F4 ;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#imgIntroduccion {
+    margin-left: 10%;
+    width: 100%; /* Ajusta al ancho del contenedor */
+    max-width: 700px; /* Tamaño máximo del logo */
+    height: auto; /* Mantiene la proporción del logo */
+    object-fit: contain; /* Asegura que la imagen se ajuste correctamente */
+}
+#logoPrincipal{
+    width: 50px;
+    margin-left: 20px;
+}
+#seccionProyectos{
+    display: flex;
+    justify-content: center;    /* Centers content horizontally */
+    align-items: center;        /* Centers content vertically */
+    height: 100vh;              /* Ensure enough space for vertical centering */
+    flex-direction: column;   
+    overflow-x: hidden;
+    padding-bottom: 20px;
+}
+
+.navPrincipal{
+    position :fixed;
+    width:320px;
+    margin-left: 5%;
+    margin-top: 20px;
+    background-color: white;
+    z-index: 1000;
+    /* height:100px; */
+    display:flex;
+ 
+    align-items: center;
+    border-color: #0D92F4;
+    border-width: 3px;
+    border-radius: 40px;
+    border-style: solid;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+nav > div > a {
+    margin-left:  10px;
+    text-decoration: none;
+    color:#0D92F4;
+}
+
+.titleProyectos {
+    font-size: 100px;
+    text-decoration: underline #0D92F4;
+}
+
+/* For screens smaller than 1200px */
+@media (max-width: 1200px) {
+    .titleProyectos {
+        font-size: 80px;
+    }
+}
+
+/* For screens smaller than 992px */
+@media (max-width: 992px) {
+    .titleProyectos {
+        font-size: 60px;
+    }
+}
+
+/* For screens smaller than 768px */
+@media (max-width: 768px) {
+    .titleProyectos {
+        font-size: 40px;
+    }
+}
+
+/* For screens smaller than 576px */
+@media (max-width: 576px) {
+    .titleProyectos {
+        font-size: 30px;
+    }
+}
+
+/* para que se mueva el texto dinamicamente */
+
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-cursor {
+    from {
+        border-color: transparent;
+    }
+    to {
+        border-color: black;
+    }
+}
+
+
+/* Para que no haya borde blanco al rededor de la pagina */
+body {
+    margin: 0;
+    padding: 0;
+
+    width: 100%;
+    height: 100%;
+
+}
+
+#seccionCV{
+    height: 800px;
+}
+
+.image-slider {
+    display: flex;
+    transition: 0.5s;
+}
+
+/* Adjusts individual slide containers */
+.slides-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 20px;
+}
+
+/* Hover effect on images */
+.slideImg {
+    width: 370px;
+    height: 240px;
+    object-fit: cover;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.slideImg:hover {
+    transform: scale(1.1);
+}
+
+/* Prevents vertical scrolling in the section */
+#seccionProyectos {
+    height: 100vh;
+    overflow: hidden;
+    
+
+    
+    #link-button-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    
+    .link-button {
+        padding: 10px 20px;
+        background-color: #F95454;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    
+    .link-button:hover {
+        background-color: #C62E2E;
+    }
