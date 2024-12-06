@@ -1,0 +1,122 @@
+html{
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    padding: 0;
+
+    width: 100%;
+
+    background-color: #0D92F4 ;
+}
+.navPrincipal{
+    position :fixed;
+    width:320px;
+    margin-left: 5%;
+    margin-top: 20px;
+    background-color: white;
+    z-index: 1000;
+    /* height:100px; */
+    display:flex;
+ 
+    align-items: center;
+    border-color: #77CDFF;
+    border-width: 3px;
+    border-radius: 40px;
+    border-style: solid;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+nav > div > a {
+    margin-left:  10px;
+    text-decoration: none;
+    color:#77CDFF;
+}
+#logoPrincipal{
+    width: 50px;
+    margin-left: 20px;
+}
+
+input, textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+html, body {
+    margin: 0; /* Remove default body margin */
+    padding: 0;
+        height: auto; /* Let section height adjust automatically */
+        overflow-x: hidden;
+    
+}
+
+section {
+
+        height: auto; /* Let section height adjust automatically */
+
+    /* Ensures the section takes full height of its parent */
+}
+
+#status {
+    margin-top: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.titleProyectos {
+    font-size: 100px;
+    text-decoration: underline #77CDFF;
+    color: white;
+}
+
+
+#seccionContacto{
+    flex-direction: column;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-wrap: wrap;
+}
+
+#contact-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.textBox {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%; /* Adjust width as needed */
+    max-width: 600px;/* Fixed height */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    overflow-y: auto; /* Allow vertical scrolling */
+    text-align: justify;
+    line-height: 1.6;
+}
+
+textarea{
+    min-height: 200px;
+    min-width: 200px;
+}
+
+.logos{
+    margin-top: 20px;
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}

@@ -47,3 +47,5 @@ function showText(imageNumber, event) {
         }
     }, 30); 
 }
+
+

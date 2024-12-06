@@ -51,6 +51,8 @@ section{
     align-items: center;
     flex-wrap: wrap;
 }
+
+
 #imgIntroduccion {
     margin-left: 10%;
     width: 100%; /* Ajusta al ancho del contenedor */
@@ -63,6 +65,7 @@ section{
     margin-left: 20px;
 }
 #seccionProyectos{
+    position:relative;
     display: flex;
     justify-content: center;    /* Centers content horizontally */
     align-items: center;        /* Centers content vertically */
@@ -83,7 +86,7 @@ section{
     display:flex;
  
     align-items: center;
-    border-color: #0D92F4;
+    border-color: #77CDFF;
     border-width: 3px;
     border-radius: 40px;
     border-style: solid;
@@ -92,12 +95,12 @@ section{
 nav > div > a {
     margin-left:  10px;
     text-decoration: none;
-    color:#0D92F4;
+    color:#77CDFF;
 }
 
 .titleProyectos {
     font-size: 100px;
-    text-decoration: underline #0D92F4;
+    text-decoration: underline #77CDFF;
 }
 
 /* For screens smaller than 1200px */
@@ -218,3 +221,5 @@ body {
     .link-button:hover {
         background-color: #C62E2E;
     }
+
+

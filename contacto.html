@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sebastian Chinchilla</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+        <link href="./css/contacto.css" rel="stylesheet">
+
+ 
+    
+    </head>
+<body>
+
+    <nav>
+        <div class="navPrincipal">
+            <a href="index.html">
+                <img id="logoPrincipal" src="./img/Logo.png">
+            </a>
+            
+            <a href="index.html#seccionProyectos"> Proyectos</a>
+            <a href="./pdf/Sebastian Chinchilla CV - ES.pdf" download="Sebastian Chinchilla CV - ES.pdf">CV</a>
+            <a href="./contacto.html"> Contacto </a>
+        </div>
+
+    </nav>
+
+    <section id="seccionContacto">
+        <h1 class="titleProyectos"> Formulario de Contacto</h1>
+        <div class="textBox">
+            <form id="contact-form">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+            
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            
+                <label for="phone">Número de teléfono:</label>
+                <input type="tel" id="phone" name="phone" required>
+            
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" required></textarea>
+            
+                <input type="hidden" name="contact_number"> <!-- Hidden input for random number -->
+                
+                <button type="submit">Send</button>
+            </form>
+            <div id="status"></div>
+        </div>
+        <div class="logos">
+            <a href="https://github.com/SebbingtonTaken/" target="_blank">
+                <img style="width: 50px;"src="./img/githubLogo.png">
+            </a>
+            <a href="https://www.linkedin.com/in/sebastian-chinchilla-arguedas-b6b48a293/" target = "_blank">
+                <img style="    width:100px;
+                 height: 50px; " src="./img/LinkedInLogo.png">
+            </a>
+        </div>
+    </section>
+  
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="./js/contacto.js"></script>
+    
+</body>
+</html>
