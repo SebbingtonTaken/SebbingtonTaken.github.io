@@ -9,14 +9,31 @@
         <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
 
         <link href="./css/contacto.css" rel="stylesheet">
-
         <link href="./css/lottie.css" rel="stylesheet">
+
+
+ 
     
     </head>
 <body>
     <div id="overlay" class="hidden">
         <img id="webpAnimation" src="./gif/03-42-05-37_512.webp" alt="Animation">
     </div>
+    <div id="overlay" class="hidden">
+        <div id="animationContainer"></div>
+    </div>
+    <nav>
+        <div class="navPrincipal">
+            <a href="index-en.html">
+                <img id="logoPrincipal" src="./img/Logo.png">
+            </a>
+            
+            <a href="index-en.html#seccionProyectos"> Projects </a>
+            <a id="downloadLink" href="./pdf/Sebastian Chinchilla CV - EN.pdf" download="Sebastian Chinchilla CV - EN.pdf">CV</a>
+            <a href="./contacto-en.html"> Contact </a>
+        </div>
+
+    </nav>
     <nav id="idioma" class="navIdioma">
         <a href="contacto-en.html">
             EN
@@ -25,59 +42,47 @@
             ES
         </a>
     </nav>
-    <nav>
-        <div class="navPrincipal">
-            <a href="index.html">
-                <img id="logoPrincipal" src="./img/Logo.png">
-            </a>
-            
-            <a href="index.html#seccionProyectos"> Proyectos</a>
-            <a id="downloadLink"  href="./pdf/Sebastian Chinchilla CV - ES.pdf" download="Sebastian Chinchilla CV - ES.pdf">CV</a>
-            <a href="./contacto.html"> Contacto </a>
-        </div>
-
-    </nav>
-
    
     <section id="seccionContacto">
-        <h1 class="titleProyectos"> Formulario de Contacto</h1>
-        <p style="color:white"> Ingresa tu informacion en el formulario, para contactarme por medio de Email. <img style="width: 25px;"src="svg/slightly-smiling-face-svgrepo-com.svg"></p>
+        <h1 class="titleProyectos"> Contact Form</h1>
+        <p style="color:white"> Enter your information below to contact me via Email. <img style="width: 25px;"src="svg/slightly-smiling-face-svgrepo-com.svg"> </p>
         <div class="textBox">
             <form id="contact-form">
-                <label for="name">Nombre:</label>
+                <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
             
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
             
-                <label for="phone">Número de teléfono:</label>
+                <label for="phone">Phone Number:</label>
                 <input type="tel" id="phone" name="phone" required>
             
-                <label for="message">Mensaje:</label>
+                <label for="message">Message:</label>
                 <textarea id="message" name="message" required></textarea>
             
                 <input type="hidden" name="contact_number"> <!-- Hidden input for random number -->
                 
-                <button type="submit">Enviar</button>
+                <button type="submit">Send</button>
             </form>
             <div id="status"></div>
         </div>
         <div class="logos">
             <a href="https://github.com/SebbingtonTaken/" target="_blank">
-                <img style="width: 50px;"src="./img/githubLogo.png">
+                <img  class="logoImg" style="width: 50px;"src="./img/githubLogo.png">
             </a>
             <a href="https://www.linkedin.com/in/sebastian-chinchilla-arguedas-b6b48a293/" target = "_blank">
-                <img style="    width:100px;
+                <img class="logoImg" style="    width:100px;
                  height: 50px; " src="./img/LinkedInLogo.png">
             </a>
             <a href="https://wa.me/50686663077" target="_blank">
                 <img class="logoImg" style="width: 50px;" src="./img/whatsapp-icon.png" alt="Contact Us on WhatsApp">
             </a>
         </div>
-    </section>
   
+    </section>
+ 
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script src="./js/contacto.js"></script>
-    <script src="./js/lottie.js"></script>
+    <script src="./js/lottie-en.js"></script>
 </body>
 </html>

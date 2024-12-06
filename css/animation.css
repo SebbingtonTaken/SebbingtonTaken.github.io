@@ -1,0 +1,35 @@
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: scale(0.5); /* Shrink and fade in */
+    }
+    to {
+        opacity: 1;
+        transform: scale(1); /* Full size and visible */
+    }
+}
+
+@keyframes disappear {
+    from {
+        opacity: 1;
+        transform: scale(1); /* Full size and visible */
+    }
+    to {
+        opacity: 0;
+        transform: scale(0.5); /* Shrink and fade out */
+    }
+}
+
+.slideImg {
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.slideImg.visible {
+    animation: appear 0.5s ease-out forwards; /* Smooth appearance */
+}
+
+.slideImg.hidden {
+    animation: disappear 0.5s ease-out forwards; /* Smooth disappearance */
+}
+
